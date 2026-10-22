@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <title>Στοιχεία σπουδαστή</title>
+</head>
+<body>
+    <h1>Στοιχεία σπουδαστή</h1>
+    <!-- Χωρίς action, η φόρμα υποβάλλεται στην ίδια σελίδα -->
+    <form action="afile.html" method="get">
+        <fieldset>
+            <legend>Προσωπικά στοιχεία</legend>
+
+            <!-- Το for συνδέεται με το id του πεδίου -->
+            <label for="studentName">Όνομα:</label>
+            <input type="text" id="studentName" name="studentName" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Υποβολή ή επιστροφή στις αρχικές τιμές -->
+            <button type="submit">Αποστολή</button>
+            <button type="reset">Επαναφορά</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <title>Το πρώτο μου Canvas</title>
+</head>
+<body>
+    <h1>Το πρώτο μου Canvas</h1>
+    <p>Ένα μπλε ορθογώνιο και η λέξη HTML5.</p>
+    <canvas id="drawing" width="300" height="150">
+        Μπλε ορθογώνιο και η λέξη HTML5.
+    </canvas>
+
+    <script>
+        // Βρίσκουμε τον Canvas και τα εργαλεία σχεδίασης
+        const canvas = document.getElementById("drawing");
+        const ctx = canvas.getContext("2d");
+
+        // Θέση x, θέση y, πλάτος, ύψος
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 120, 60);
+
+        // Κείμενο κάτω από το ορθογώνιο
+        ctx.fillStyle = "black";
+        ctx.font = "24px Arial";
+        ctx.fillText("HTML5", 20, 120);
+    </script>
+</body>
+</html>

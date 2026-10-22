@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <title>Επιλογή μαθήματος</title>
+</head>
+<body>
+    <h1>Επιλογή μαθήματος</h1>
+    <form method="get">
+        <!-- Λίστα με δύο συγκεκριμένες επιλογές -->
+        <label for="course">Μάθημα:</label>
+        <select id="course" name="course">
+            <option value="html" selected>HTML</option>
+            <option value="css">CSS</option>
+        </select>
+        <br><br>
+
+        <!-- Περιοχή κειμένου πολλών γραμμών -->
+        <label for="comments">Σχόλια:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <button type="submit">Αποστολή</button>
+        <button type="reset">Επαναφορά</button>
+    </form>
+</body>
+</html>

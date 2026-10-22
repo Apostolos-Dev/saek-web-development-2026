@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <title>Θυμήσου το όνομά μου</title>
+</head>
+<body>
+    <h1>Θυμήσου το όνομά μου</h1>
+    <label for="studentName">Όνομα:</label>
+    <input type="text" id="studentName">
+    <br><br>
+
+    <!-- Τα απλά κουμπιά καλούν συναρτήσεις JavaScript -->
+    <button type="button" onclick="saveName()">Αποθήκευση</button>
+    <button type="button" onclick="loadName()">Φόρτωση</button>
+
+    <script>
+        function saveName() {
+            // Διαβάζουμε το πεδίο και κρατάμε το όνομα
+            const name = document.getElementById("studentName").value;
+            sessionStorage.setItem("studentName", name);
+        }
+
+        function loadName() {
+            // Διαβάζουμε την αποθηκευμένη τιμή
+            const savedName = sessionStorage.getItem("studentName");
+
+            // Φορτώνουμε την τιμή μόνο αν υπάρχει
+            if (savedName !== null) {
+                document.getElementById("studentName").value = savedName;
+            }
+        }
+    </script>
+</body>
+</html>
