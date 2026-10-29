@@ -1,0 +1,33 @@
+/* Εφαρμογή του Box Model στο div */
+div.card {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    
+    /* Κεντράρισμα στην οθόνη μέσω margin */
+    margin-left: auto;
+    margin-right: auto; 
+    
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Μορφοποίηση Εικόνας να μην ξεπερνάει το κουτί */
+div.card img {
+    width: 100%;
+}
+
+/* Μορφοποίηση Συνδέσμου (Αρχική κατάσταση) */
+div.card a:link, div.card a:visited {
+    text-decoration: none; /* Αφαίρεση υπογράμμισης */
+    color: white;
+    background-color: #000099;
+    padding: 10px 15px;
+    /* Για να πάρει σωστά το πλάτος, ύψος και padding */
+    display: inline-block; 
+}
+
+/* Μορφοποίηση Συνδέσμου (Όταν το ποντίκι είναι από πάνω - Ψευδοκλάση hover) */
+div.card a:hover {
+    background-color: #ff0000; /* Αλλάζει σε κόκκινο */
+}
