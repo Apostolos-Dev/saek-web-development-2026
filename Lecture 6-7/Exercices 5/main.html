@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <title>Titan Fitness - Το γυμναστήριό σου</title>
+    <link rel="stylesheet" type="text/css" href="style_main.css" />
+  </head>
+  <body>
+    <!-- Κεφαλίδα -->
+    <header>
+      <h1>Titan Fitness</h1>
+      <p>Χτίσε το σώμα που ονειρεύεσαι</p>
+    </header>
+    <!-- Πλοήγηση -->
+    <nav>
+      <ul>
+        <li><a href="#video">Γνωρίστε μας</a></li>
+        <li><a href="#services">Υπηρεσίες</a></li>
+        <li><a href="#schedule">Πρόγραμμα</a></li>
+        <li><a href="#register">Εγγραφή</a></li>
+      </ul>
+    </nav>
+
+    <!-- Κυρίως Περιεχόμενο -->
+    <main>
+      <!-- Ενότητα Πολυμέσων -->
+      <section id="video">
+        <h2>Γνωρίστε τον χώρο μας</h2>
+        <!-- Χρήση ετικέτας video με controls -->
+        <video controls width="600">
+          <source src="gym_promo.mp4" type="video/mp4" />
+          <source src="gym_promo.ogg" type="video/ogg" />
+          Ο browser σας δεν υποστηρίζει την αναπαραγωγή βίντεο.
+        </video>
+      </section>
+      <hr />
+
+      <!-- Ενότητα Εμφωλευμένων Λιστών -->
+      <section id="services">
+        <h2>Οι Υπηρεσίες μας</h2>
+        <ul>
+          <li>
+            <strong>Ομαδικά Προγράμματα</strong>
+            <ul>
+              <li>Zumba (Αερόβια χορευτική γυμναστική)</li>
+              <li>Pilates (Ενδυνάμωση κορμού)</li>
+              <li>Yoga (Ευλυγισία και χαλάρωση)</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Ατομική Προπόνηση</strong>
+            <ul>
+              <li>Ελεύθερα Βάρη</li>
+              <li>Μηχανήματα Αντίστασης</li>
+              <li>Personal Training</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Ενότητα Πίνακα -->
+      <section id="schedule">
+        <h2>Πρόγραμμα Ομαδικών</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Ώρα</th>
+              <th scope="col">Δευτέρα</th>
+              <th scope="col">Τρίτη</th>
+              <th scope="col">Τετάρτη</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">17:00 - 18:00</th>
+              <td>Zumba</td>
+              <td>Pilates</td>
+              <td>Zumba</td>
+            </tr>
+            <tr>
+              <th scope="row">18:00 - 19:00</th>
+              <td>Yoga</td>
+              <!-- Χρήση colspan για μάθημα που γίνεται σε δύο αίθουσες ή συγχώνευση ημερών -->
+              <td colspan="2">Crossfit (Κοινό Τμήμα)</td>
+            </tr>
+            <tr>
+              <th scope="row">19:00 - 21:00</th>
+              <!-- Χρήση rowspan για μάθημα/δραστηριότητα που διαρκεί 2 ώρες -->
+              <td rowspan="2">Ελεύθερα Βάρη (Open Gym)</td>
+              <td>TRX</td>
+              <td>Pilates</td>
+            </tr>
+            <tr>
+              <th scope="row">21:00 - 22:00</th>
+              <td>Yoga</td>
+              <td>Zumba</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Ενότητα Φόρμας (Νέα στοιχεία HTML5) -->
+      <section id="register">
+        <h2>Γίνε Μέλος</h2>
+        <!-- Ασφαλής αποστολή δεδομένων με POST -->
+        <form action="submit_form.html" method="GET">
+          <fieldset>
+            <legend>Στοιχεία Εγγραφής</legend>
+
+            <label for="fullname">Ονοματεπώνυμο:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="π.χ. Γιώργος Παπαδόπουλος"
+              required
+              autofocus
+            />
+
+            <label for="age">Ηλικία:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="16"
+              max="99"
+              value="18"
+              required
+            />
+
+            <label for="tshirt">Διάλεξε χρώμα για το δωρεάν T-shirt σου:</label>
+            <!-- Πεδίο επιλογής χρώματος -->
+            <input type="color" id="tshirt" name="tshirt" value="#d32f2f" />
+
+            <label for="startdate">Ημερομηνία Έναρξης:</label>
+            <!-- Πεδίο ημερολογίου -->
+            <input type="date" id="startdate" name="startdate" required />
+
+            <input type="submit" value="Ολοκλήρωση Εγγραφής" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <!-- Υποσέλιδο -->
+    <footer>
+      <p>
+        Copyright &copy; 2026 Titan Fitness. Όλα τα δικαιώματα διατηρούνται.
+      </p>
+    </footer>
+  </body>
+</html>

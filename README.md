@@ -3,4 +3,5 @@ Lab Exercises for the course Web Applications Development Tools <br>
 [2] 2nd Lecture ✅ <br>
 [3] 3rd Lecture ✅ <br>
 [4] 4th Lecture ✅ <br>
-[5] 5th Lecture ✅ 
+[5] 5th Lecture ✅ <br>
+[6] 6th-7th Lecture ✅

@@ -1,0 +1,18 @@
+/* Εξωτερικό Αρχείο CSS (External) */
+
+/* Μορφοποίηση Επικεφαλίδας */
+h1 {
+    text-align: center;
+    color: #aa0000;
+}
+
+/* Μορφοποίηση Παραγράφου */
+p {
+    color: #0000aa;
+    font-size: 18px;
+}
+
+/* Μορφοποίηση Λίστας (Αλλαγή κουκκίδας σε τετράγωνο) */
+ul.mathimata {
+    list-style-type: square;
+}
